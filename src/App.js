@@ -82,8 +82,6 @@ class App extends Component {
   
 
   handleTileClick = id => {
-    // console.log(`You've clicked ${id}`);
-
     //* check to see if this has been clicked before!
     this.state.tiles.forEach(tile => {
       if (tile.id === id) {
@@ -101,16 +99,16 @@ class App extends Component {
         } else {
           tile.checked = true;
           
-          //update the score
+          //Update the score
           this.setState({ currentScore: this.state.currentScore + 1 });
         
-          //if the score is greater than the top score, update the top score too.
+          //If the score is greater than the top score, update the top score too.
           this.setState({ message: "Well Done. Keep Going!" });
 
-          //randomize the tiles
+          //Randomize the tiles
           let tiles = this.state.tiles.slice(0);
           tiles.sort(() => Math.random() - 0.5);
-          this.setState({tiles})
+          this.setState({tiles});
         }
       }
     });

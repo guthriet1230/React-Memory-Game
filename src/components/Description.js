@@ -7,7 +7,7 @@ export default function Description(props) {
       <p>
         Click on any of the images below to start the game. Once you've begun,
         try and click as many images as you can without repeating yourself. If
-        you click an image twice, your score count starts over!
+        you click an image twice, you start over!
       </p>
     </div>
   );
